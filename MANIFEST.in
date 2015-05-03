@@ -1,0 +1,8 @@
+include setup.py
+include requirements.txt
+include README.rst
+include LICENSE
+recursive-exclude uniauth *.pyc
+recursive-exclude uniauth *.pyo
+prune tests
+prune docs

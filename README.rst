@@ -2,11 +2,11 @@
 UniAuth
 =======
 
-.. image:: https://travis-ci.org/OohlaLabs/uniauth.svg?branch=master
-    :target: https://travis-ci.org/OohlaLabs/uniauth
+.. image:: https://travis-ci.org/jthi3rry/uniauth.svg?branch=master
+    :target: https://travis-ci.org/jthi3rry/uniauth
 
-.. image:: https://coveralls.io/repos/OohlaLabs/uniauth/badge.png?branch=master
-    :target: https://coveralls.io/r/OohlaLabs/uniauth
+.. image:: https://coveralls.io/repos/jthi3rry/uniauth/badge.png?branch=master
+    :target: https://coveralls.io/r/jthi3rry/uniauth
 
 Minimalist and framework independent package that provides common OAuth (1 & 2) consumers (or the ability to easily add more).
 

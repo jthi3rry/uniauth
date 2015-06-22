@@ -18,7 +18,7 @@ class Google(ProfileMixin, OAuth2Consumer):
     profile_url = "https://www.googleapis.com/oauth2/v1/userinfo"
 
     authorization_params = {"approval_prompt": "auto"}
-    request_resource_params = {"alt": "json"}
+    request_extra_params = {"alt": "json"}
 
     def normalize_profile_data(self, data):
         return {"uid": data.get("id"),
@@ -74,7 +74,7 @@ class LinkedIn(ProfileMixin, OAuth2Consumer):
     access_token_url = "https://api.linkedin.com/uas/oauth2/accessToken"
     profile_url = "https://api.linkedin.com/v1/people/~:(id,first-name,last-name,picture-url,email-address)"
 
-    request_resource_params = {"format": "json"}
+    request_extra_params = {"format": "json"}
 
     def normalize_profile_data(self, data):
         return {"uid": data.get("id"),

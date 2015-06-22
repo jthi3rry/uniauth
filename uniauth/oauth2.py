@@ -85,7 +85,7 @@ class OAuth2Consumer(BaseAuthConsumer):
 
         """
         token = copy(token)
-        print(token)
+
         if token.get("expires_at", False):
             token["expires_at"] = datetime.fromtimestamp(token.get("expires_at"), tz=utc)
 

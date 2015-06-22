@@ -29,9 +29,9 @@ class MetaAuthConsumer(type):
 
     def __new__(cls, name, bases, attrs):
         if 'name' not in attrs:
-            attrs['name'] = name.lower()
+            attrs['name'] = six.text_type(name.lower())
         if 'verbose_name' not in attrs:
-            attrs['verbose_name'] = re.sub('(.)([A-Z][a-z]+)', r'\1 \2', name)
+            attrs['verbose_name'] = six.text_type(re.sub('(.)([A-Z][a-z]+)', r'\1 \2', name))
         return super(MetaAuthConsumer, cls).__new__(cls, name, bases, attrs)
 
 

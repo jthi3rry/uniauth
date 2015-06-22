@@ -155,6 +155,11 @@ All contributions and comments are welcome.
 Change Log
 ==========
 
+v0.0.2
+------
+* Cast default provider name to unicode
+* Fix resource request extra params not used
+
 v0.0.1
 ------
 * Initial
